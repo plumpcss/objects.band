@@ -1,0 +1,17 @@
+{
+  "name": "plumpcss-band",
+  "version": "0.1.0",
+  "authors": [
+    "Jon Hurrell <jon@plumpdigital.co.uk>"
+  ],
+  "description": "The band object simply adds vertical padding to content.",
+  "main": "_objects.band.scss",
+  "keywords": [
+    "plumpcss",
+    "oocss",
+    "css",
+    "object"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.plumpdigital.co.uk/"
+}

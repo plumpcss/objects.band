@@ -1,0 +1,148 @@
+///*------------------------------------*\
+//   #BAND
+//\*------------------------------------*/
+
+//
+//    The band object simply adds vertical padding to content.
+//
+
+// Predefine the variables below in order to alter and enable specific features.
+$plump-band-namespace:                       $plump-namespace !default;
+
+$plump-band-padding:                         $plump-base-spacing-unit !default;
+$plump-band-padding--tiny:                   quarter($plump-band-padding) !default;
+$plump-band-padding--small:                  halve($plump-band-padding) !default;
+$plump-band-padding--large:                  double($plump-band-padding) !default;
+$plump-band-padding--huge:                   quadruple($plump-band-padding) !default;
+
+$plump-band-background--highlight:           #fff !default;
+$plump-band-background--dark:                #2e2e2e !default;
+$plump-band-background--tint:                #f2f2f2 !default;
+
+$plump-enable-band--flush:                   false !default;
+$plump-enable-band--tiny:                    false !default;
+$plump-enable-band--small:                   false !default;
+$plump-enable-band--large:                   false !default;
+$plump-enable-band--huge:                    false !default;
+
+$plump-enable-band--highlight:               false !default;
+$plump-enable-band--dark:                    false !default;
+$plump-enable-band--tint:                    false !default;
+
+
+
+
+
+.#{$plump-band-namespace}band,
+%#{$plump-band-namespace}band {
+	padding-top: $plump-band-padding;
+	padding-bottom: $plump-band-padding;
+}
+
+
+
+
+
+@if ($plump-enable-band--flush == true) {
+
+	//
+	// Flush (i.e. no padding) band.
+	//
+
+	.#{$plump-band-namespace}band--flush,
+	%#{$plump-band-namespace}band--flush {
+		padding: 0;
+	}
+
+}
+
+@if ($plump-enable-band--tiny == true) {
+
+	//
+	// Tiny band.
+	//
+
+	.#{$plump-band-namespace}band--tiny,
+	%#{$plump-band-namespace}band--tiny {
+		padding: $plump-band-padding--tiny;
+	}
+
+}
+
+@if ($plump-enable-band--small == true) {
+
+	//
+	// Small band.
+	//
+
+	.#{$plump-band-namespace}band--small,
+	%#{$plump-band-namespace}band--small {
+		padding: $plump-band-padding--small;
+	}
+
+}
+
+@if ($plump-enable-band--large == true) {
+
+	//
+	// Large band.
+	//
+
+	.#{$plump-band-namespace}band--large,
+	%#{$plump-band-namespace}band--large {
+		padding: $plump-band-padding--large;
+	}
+
+}
+
+@if ($plump-enable-band--huge == true) {
+
+	//
+	// Huge band.
+	//
+
+	.#{$plump-band-namespace}band--huge,
+	%#{$plump-band-namespace}band--huge {
+		padding: $plump-band-padding--huge;
+	}
+
+}
+
+
+
+
+@if ($plump-enable-band--highlight == true) {
+
+	//
+	// Highlight band.
+	//
+
+	.#{$plump-band-namespace}band--highlight,
+	%#{$plump-band-namespace}band--highlight {
+		background-color: $plump-band-background--highlight;
+	}
+}
+
+@if ($plump-enable-band--dark == true) {
+
+	//
+	// Highlight band.
+	//
+
+	.#{$plump-band-namespace}band--dark,
+	%#{$plump-band-namespace}band--dark {
+		background-color: $plump-band-background--dark;
+	}
+}
+
+@if ($plump-enable-band--tint == true) {
+
+	//
+	// Tint band.
+	//
+
+	.#{$plump-band-namespace}band--tint,
+	%#{$plump-band-namespace}band--tint {
+		background-color: $plump-band-background--tint;
+	}
+}
