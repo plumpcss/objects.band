@@ -64,7 +64,8 @@ $plump-enable-band--tint:                    false !default;
 
 	.#{$plump-band-namespace}band--tiny,
 	%#{$plump-band-namespace}band--tiny {
-		padding: $plump-band-padding--tiny;
+		padding-top: $plump-band-padding--tiny;
+		padding-bottom: $plump-band-padding--tiny;
 	}
 
 }
@@ -77,7 +78,8 @@ $plump-enable-band--tint:                    false !default;
 
 	.#{$plump-band-namespace}band--small,
 	%#{$plump-band-namespace}band--small {
-		padding: $plump-band-padding--small;
+		padding-top: $plump-band-padding--small;
+		padding-bottom: $plump-band-padding--small;
 	}
 
 }
@@ -90,7 +92,8 @@ $plump-enable-band--tint:                    false !default;
 
 	.#{$plump-band-namespace}band--large,
 	%#{$plump-band-namespace}band--large {
-		padding: $plump-band-padding--large;
+		padding-top: $plump-band-padding--large;
+		padding-bottom: $plump-band-padding--large;
 	}
 
 }
@@ -103,7 +106,8 @@ $plump-enable-band--tint:                    false !default;
 
 	.#{$plump-band-namespace}band--huge,
 	%#{$plump-band-namespace}band--huge {
-		padding: $plump-band-padding--huge;
+		padding-top: $plump-band-padding--huge;
+		padding-bottom: $plump-band-padding--huge;
 	}
 
 }
