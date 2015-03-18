@@ -2,11 +2,9 @@
 //   #BAND
 //\*------------------------------------*/
 
-//
 //    The band object simply adds vertical padding to content.
-//
 
-// Predefine the variables below in order to alter and enable specific features.
+//    Predefine the variables below in order to alter and enable specific features.
 $plump-band-namespace:                       $plump-namespace !default;
 
 $plump-band-padding:                         $plump-base-spacing-unit !default;
@@ -33,8 +31,8 @@ $plump-enable-band--tint:                    false !default;
 
 
 
-.#{$plump-band-namespace}band,
-%#{$plump-band-namespace}band {
+.#{$plump-band-namespace}o-band,
+%#{$plump-band-namespace}o-band {
 	padding-top: $plump-band-padding;
 	padding-bottom: $plump-band-padding;
 }
@@ -45,12 +43,10 @@ $plump-enable-band--tint:                    false !default;
 
 @if ($plump-enable-band--flush == true) {
 
-	//
-	// Flush (i.e. no padding) band.
-	//
+	//    Flush (i.e. no padding) band.
 
-	.#{$plump-band-namespace}band--flush,
-	%#{$plump-band-namespace}band--flush {
+	.#{$plump-band-namespace}o-band--flush,
+	%#{$plump-band-namespace}o-band--flush {
 		padding: 0;
 	}
 
@@ -58,12 +54,10 @@ $plump-enable-band--tint:                    false !default;
 
 @if ($plump-enable-band--tiny == true) {
 
-	//
-	// Tiny band.
-	//
+	//    Tiny band.
 
-	.#{$plump-band-namespace}band--tiny,
-	%#{$plump-band-namespace}band--tiny {
+	.#{$plump-band-namespace}o-band--tiny,
+	%#{$plump-band-namespace}o-band--tiny {
 		padding-top: $plump-band-padding--tiny;
 		padding-bottom: $plump-band-padding--tiny;
 	}
@@ -72,12 +66,10 @@ $plump-enable-band--tint:                    false !default;
 
 @if ($plump-enable-band--small == true) {
 
-	//
-	// Small band.
-	//
+	//    Small band.
 
-	.#{$plump-band-namespace}band--small,
-	%#{$plump-band-namespace}band--small {
+	.#{$plump-band-namespace}o-band--small,
+	%#{$plump-band-namespace}o-band--small {
 		padding-top: $plump-band-padding--small;
 		padding-bottom: $plump-band-padding--small;
 	}
@@ -86,12 +78,10 @@ $plump-enable-band--tint:                    false !default;
 
 @if ($plump-enable-band--large == true) {
 
-	//
-	// Large band.
-	//
+	//    Large band.
 
-	.#{$plump-band-namespace}band--large,
-	%#{$plump-band-namespace}band--large {
+	.#{$plump-band-namespace}o-band--large,
+	%#{$plump-band-namespace}o-band--large {
 		padding-top: $plump-band-padding--large;
 		padding-bottom: $plump-band-padding--large;
 	}
@@ -100,12 +90,10 @@ $plump-enable-band--tint:                    false !default;
 
 @if ($plump-enable-band--huge == true) {
 
-	//
-	// Huge band.
-	//
+	//    Huge band.
 
-	.#{$plump-band-namespace}band--huge,
-	%#{$plump-band-namespace}band--huge {
+	.#{$plump-band-namespace}o-band--huge,
+	%#{$plump-band-namespace}o-band--huge {
 		padding-top: $plump-band-padding--huge;
 		padding-bottom: $plump-band-padding--huge;
 	}
@@ -117,36 +105,30 @@ $plump-enable-band--tint:                    false !default;
 
 @if ($plump-enable-band--highlight == true) {
 
-	//
-	// Highlight band.
-	//
+	//    Highlight band.
 
-	.#{$plump-band-namespace}band--highlight,
-	%#{$plump-band-namespace}band--highlight {
+	.#{$plump-band-namespace}o-band--highlight,
+	%#{$plump-band-namespace}o-band--highlight {
 		background-color: $plump-band-background--highlight;
 	}
 }
 
 @if ($plump-enable-band--dark == true) {
 
-	//
-	// Highlight band.
-	//
+	//    Highlight band.
 
-	.#{$plump-band-namespace}band--dark,
-	%#{$plump-band-namespace}band--dark {
+	.#{$plump-band-namespace}o-band--dark,
+	%#{$plump-band-namespace}o-band--dark {
 		background-color: $plump-band-background--dark;
 	}
 }
 
 @if ($plump-enable-band--tint == true) {
 
-	//
-	// Tint band.
-	//
+	//    Tint band.
 
-	.#{$plump-band-namespace}band--tint,
-	%#{$plump-band-namespace}band--tint {
+	.#{$plump-band-namespace}o-band--tint,
+	%#{$plump-band-namespace}o-band--tint {
 		background-color: $plump-band-background--tint;
 	}
 }
